@@ -52,17 +52,17 @@ public class main
     {
         KodePos kodePos = new KodePos();
 
-        Console.WriteLine(kodePos.getKodePos("Batununggal")); // Output: Batununggal: 40266
-        Console.WriteLine(kodePos.getKodePos("Kujangsari")); // Output: Kujangsari: 40287
-        Console.WriteLine(kodePos.getKodePos("Mengger")); // Output: Mengger: 40267
-        Console.WriteLine(kodePos.getKodePos("Wates")); // Output: Wates: 40256
-        Console.WriteLine(kodePos.getKodePos("Cijaura")); // Output: Cijaura: 40287
-        Console.WriteLine(kodePos.getKodePos("Jatisari")); // Output: Jatisari: 40286
-        Console.WriteLine(kodePos.getKodePos("Margasari")); // Output: Margasari: 40286
-        Console.WriteLine(kodePos.getKodePos("Sekejati")); // Output: Sekejati: 40286
-        Console.WriteLine(kodePos.getKodePos("Kebonwaru")); // Output: Kebonwaru: 40272
-        Console.WriteLine(kodePos.getKodePos("Maleer")); // Output: Maleer: 40274
-        Console.WriteLine(kodePos.getKodePos("Samoja")); // Output: Samoja: 40273
-        Console.WriteLine(kodePos.getKodePos("Tidak Ada")); // Output: Kode pos tidak ditemukan
+        Console.WriteLine(kodePos.getKodePos("Batununggal")); 
+        Console.WriteLine(kodePos.getKodePos("Kujangsari")); 
+        Console.WriteLine(kodePos.getKodePos("Mengger")); 
+        Console.WriteLine(kodePos.getKodePos("Wates")); 
+        Console.WriteLine(kodePos.getKodePos("Cijaura")); 
+        Console.WriteLine(kodePos.getKodePos("Jatisari")); 
+        Console.WriteLine(kodePos.getKodePos("Margasari")); 
+        Console.WriteLine(kodePos.getKodePos("Sekejati")); 
+        Console.WriteLine(kodePos.getKodePos("Kebonwaru")); 
+        Console.WriteLine(kodePos.getKodePos("Maleer")); 
+        Console.WriteLine(kodePos.getKodePos("Samoja")); 
+
     }
 }
