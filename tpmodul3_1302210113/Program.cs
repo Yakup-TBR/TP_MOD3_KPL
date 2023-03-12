@@ -6,63 +6,54 @@ public class KodePos
 {
     public string getKodePos(string kelurahan)
     {
-        string kodePos = "";
-
         switch (kelurahan)
         {
             case "Batununggal":
-                kodePos = "40266";
-                break;
+                return "40266";
             case "Kujangsari":
             case "Cijaura":
-                kodePos = "40287";
-                break;
+                return "40287";
             case "Mengger":
-                kodePos = "40267";
-                break;
+                return "40267";
             case "Wates":
-                kodePos = "40256";
-                break;
+                return "40256";
             case "Jatisari":
             case "Margasari":
             case "Sekejati":
-                kodePos = "40286";
-                break;
+                return "40286";
             case "Kebonwaru":
-                kodePos = "40272";
-                break;
+                return "40272";
             case "Maleer":
-                kodePos = "40274";
-                break;
+                return "40274";
             case "Samoja":
-                kodePos = "40273";
-                break;
+                return "40273";
             default:
-                kodePos = "Kode pos tidak ditemukan";
-                break;
+                return "Kode pos tidak ditemukan";
         }
-
-        return $"{kelurahan}: {kodePos}";
     }
 }
 
-public class main
+public class Program
 {
-    public static void Main()
+    static void Main()
     {
         KodePos kodePos = new KodePos();
 
-        Console.WriteLine(kodePos.getKodePos("Batununggal")); 
-        Console.WriteLine(kodePos.getKodePos("Kujangsari")); 
-        Console.WriteLine(kodePos.getKodePos("Mengger")); 
-        Console.WriteLine(kodePos.getKodePos("Wates")); 
-        Console.WriteLine(kodePos.getKodePos("Cijaura")); 
-        Console.WriteLine(kodePos.getKodePos("Jatisari")); 
-        Console.WriteLine(kodePos.getKodePos("Margasari")); 
-        Console.WriteLine(kodePos.getKodePos("Sekejati")); 
-        Console.WriteLine(kodePos.getKodePos("Kebonwaru")); 
-        Console.WriteLine(kodePos.getKodePos("Maleer")); 
-        Console.WriteLine(kodePos.getKodePos("Samoja")); 
+        Console.WriteLine("| Kelurahan\t\t| Kode Pos |");
+        Console.WriteLine("--------------------------------------");
 
+        Console.WriteLine($"| Batununggal\t\t| {kodePos.getKodePos("Batununggal")}\t|");
+        Console.WriteLine($"| Kujangsari\t\t| {kodePos.getKodePos("Kujangsari")}\t|");
+        Console.WriteLine($"| Mengger\t\t| {kodePos.getKodePos("Mengger")}\t|");
+        Console.WriteLine($"| Wates\t\t\t| {kodePos.getKodePos("Wates")}\t|");
+        Console.WriteLine($"| Cijaura\t\t| {kodePos.getKodePos("Cijaura")}\t|");
+        Console.WriteLine($"| Jatisari\t\t| {kodePos.getKodePos("Jatisari")}\t|");
+        Console.WriteLine($"| Margasari\t\t| {kodePos.getKodePos("Margasari")}\t|");
+        Console.WriteLine($"| Sekejati\t\t| {kodePos.getKodePos("Sekejati")}\t|");
+        Console.WriteLine($"| Kebonwaru\t\t| {kodePos.getKodePos("Kebonwaru")}\t|");
+        Console.WriteLine($"| Maleer\t\t| {kodePos.getKodePos("Maleer")}\t|");
+        Console.WriteLine($"| Samoja\t\t| {kodePos.getKodePos("Samoja")}\t|");
+
+        Console.WriteLine("--------------------------------------");
     }
 }
