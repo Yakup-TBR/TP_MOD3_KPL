@@ -42,7 +42,7 @@ class DoorMachine
         currentState = new LockedState();
     }
 
-    public void SetState(State state)
+    public void SetState_1302210113(State state)
     {
         currentState = state;
         currentState.DisplayState();
@@ -108,9 +108,9 @@ public class Program
         DoorMachine doorMachine = new DoorMachine();
 
         // Mengubah state menjadi UnlockedState
-        doorMachine.SetState(new UnlockedState());
+        doorMachine.SetState_1302210113(new UnlockedState());
 
         // Mengubah state menjadi LockedState
-        doorMachine.SetState(new LockedState());
+        doorMachine.SetState_1302210113(new LockedState());
     }
 }
